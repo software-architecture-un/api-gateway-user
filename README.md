@@ -1,5 +1,6 @@
 # QUERIES
 ## ALL USERS
+```json
 query {
   allUsers {
     content {
@@ -14,8 +15,10 @@ query {
     message
   }
 }
+```
 
 ## USER BY ID
+```json
 query {
   userById(id: 1) {
     content {
@@ -30,10 +33,12 @@ query {
     message
   }
 }
+```
 
 # MUTATIONS
 
 ## JWT
+```json
 mutation {
   signIn(user: {
     email: "dacherreragu@unal.edu.co"
@@ -43,8 +48,10 @@ mutation {
     message
   } 
 }
+```
 
 ## CREATE USER
+```json
 mutation {
   createUser(user: {
     name:"Dacherreragu"
@@ -66,8 +73,10 @@ mutation {
     message
   }
 }
+```
 
 ## UPDATE USER 1
+```json
 mutation {
   updateUser(id:1, user: {
     name:"David Celiano Herrera Gutiérrez"
@@ -85,8 +94,10 @@ mutation {
     message
   }
 }
+```
 
 ## UPDATE USER 2
+```json
 mutation {
   updateUser2(id:1, user: {
     name:"Celiano Herrera Gutiérrez"
@@ -104,8 +115,10 @@ mutation {
     message
   }
 }
+```
 
 ## DELETE USER
+```json
 mutation {
   deleteUser(id: 3) {
     content {
@@ -121,5 +134,6 @@ mutation {
     message
   }
 }
+```
 
 
