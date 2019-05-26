@@ -1,12 +1,14 @@
 version: '2.1'
 services:
-  academy-api:
+  api-gateway-1:
     build: .
     environment:
       PORT: '5000'
       SHOW_URLS: 'true'
-      ACTIVITIES_URL: '192.168.99.101'
-      ACTIVITIES_PORT: '4000'
-      ACTIVITIES_ENTRY: 'activities-ms/resources/activities'
+      USERS_URL: '192.168.99.101'
+      USERS_PORT: '3001'
+      USERS_ENTRY: 'users'
+      USERS_SIGNUP_ENTRY: 'signup'
+      USERS_LOGIN_ENTRY: 'login'
     ports:
       - '5000:5000'
