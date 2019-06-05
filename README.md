@@ -7,8 +7,6 @@ query {
       name
       document
       age
-      gender
-      reputation
       email
       password_digest
     }
@@ -25,8 +23,6 @@ query {
       name
       document
       age
-      gender
-      reputation
       email
       password_digest
     }
@@ -57,7 +53,6 @@ mutation {
     name:"Dacherreragu"
     document:"123456789"
     age:18
-    gender: "Male"
     email: "prueba@test.prueba"
     password: "123456"
   }) {
@@ -65,8 +60,6 @@ mutation {
       name
       document
       age
-      gender
-      reputation
       email
       password_digest
     }
@@ -86,8 +79,6 @@ mutation {
       name
       document
       age
-      gender
-      reputation
       email
       password_digest
     }
@@ -107,8 +98,6 @@ mutation {
       name
       document
       age
-      gender
-      reputation
       email
       password_digest
     }
@@ -126,8 +115,6 @@ mutation {
       name
       document
       age
-      gender
-      reputation
       email
       password_digest
     }
