@@ -27,6 +27,7 @@ query {
       password_digest
     }
     message
+    status
   }
 }
 ```
@@ -40,8 +41,9 @@ mutation {
     email: "dacherreragu@unal.edu.co"
     password: "123456"
   }) {
-    jwt
+    content
     message
+    status
   } 
 }
 ```
@@ -64,6 +66,7 @@ mutation {
       password_digest
     }
     message
+    status
   }
 }
 ```
@@ -83,6 +86,7 @@ mutation {
       password_digest
     }
     message
+    status
   }
 }
 ```
@@ -102,6 +106,7 @@ mutation {
       password_digest
     }
     message
+    status
   }
 }
 ```
@@ -119,6 +124,18 @@ mutation {
       password_digest
     }
     message
+    status
+  }
+}
+```
+
+## VERIFY JWT
+```json
+mutation {
+  verifyToken(jwt: "tokenjfddfkjxzjxzlk") {
+    content
+    message
+    status
   }
 }
 ```

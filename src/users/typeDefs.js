@@ -1,30 +1,30 @@
 export const usersTypeDef = `
 type User {
-    id: Int!
-    name: String!
-    document: String!
-    age: Int!
-    email: String!
+    id: Int
+    name: String
+    document: String
+    age: Int
+    email: String
     password_digest: String
 }
 type JWT {
-    jwt: String!
-    message: String!
+    jwt: String
+    message: String
 }
 type UserResponse {
-    content: User!
-    message: String!
+    content: User
+    message: String
 }
 type UsersResponse {
-    content: [User]!
-    message: String!
+    content: [User]
+    message: String
 }
 input UserInput {
-    name: String!
-    document: String!
-    age: Int!
-    email: String!
-    password: String!
+    name: String
+    document: String
+    age: Int
+    email: String
+    password: String
 }
 input UserUpdateInput {
     name: String
@@ -35,19 +35,19 @@ input UserUpdateInput {
 }
 
 input UserLogin {
-    email: String!
-    password: String!
+    email: String
+    password: String
 }`;
 
 export const usersQueries = `
     allUsers: UsersResponse
-    userById(id: Int!): UserResponse
+    userById(id: Int): UserResponse
 `;
 
 export const usersMutations = `
-    signIn(user: UserLogin!): JWT
-    createUser(user: UserInput!): UserResponse
-    deleteUser(id: Int!): UserResponse
-    updateUser(id: Int!, user: UserUpdateInput!): UserResponse 
-    updateUser2(id: Int!, user: UserUpdateInput!): UserResponse 
+    signIn(user: UserLogin): JWT
+    createUser(user: UserInput): UserResponse
+    deleteUser(id: Int): UserResponse
+    updateUser(id: Int, user: UserUpdateInput): UserResponse 
+    updateUser2(id: Int, user: UserUpdateInput): UserResponse 
 `;
