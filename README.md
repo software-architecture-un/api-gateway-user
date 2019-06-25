@@ -140,4 +140,29 @@ mutation {
 }
 ```
 
+## USER BY EMAIL
+```json
+mutation {
+  userByEmail(email:
+    {
+      email: "dacherreragu@unal.edu.co"
+    })
+  {
+    content
+     {
+      id
+      name
+      document
+      age
+      email
+      password_digest
+    }
+    message
+    status
+  }
+}
+```
+
+
+
 
